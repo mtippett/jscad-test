@@ -6,6 +6,7 @@
   "private": true,
   "dependencies": {
     "csg": "github:jscad/csg.js",
-    "openjscad":"github:Spiritdude/OpenJSCAD.org#dev"
+    "openjscad":"github:kaosat-dev/OpenJSCAD.org#external-csgjs",
+    "jscad":""
   }
 }
