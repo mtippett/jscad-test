@@ -7,7 +7,8 @@ var cad = require('jscad');
 
 //var dim = [2, 5, 10, 15, 25, 50, 75, 85, 100, 115, 125, 150];
 //var dim = [2,5,7,10,12,15,17,20,25,30,40];
-var dim = [40];
+var dim = [2,5,7,10,14,17,20,22,20,17,14,10,7,5,2];
+
 
 var calls = [{
         op: op_union,
@@ -50,9 +51,9 @@ for (var index in calls) {
     var extension = calls[index].extension;
 
 
-    var strip = null;
     //    console.log(strip);
     for (var count in dim) {
+        var strip = null;
         var then = Date.now();
         for (var x = 0; x < dim[count]; x++) {
         for (var y = 0; y < dim[count]; y++) {
