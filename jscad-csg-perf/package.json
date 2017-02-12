@@ -1,0 +1,12 @@
+{
+  "name": "badgly",
+  "version": "0.0.1",
+  "description": "",
+  "main": "badgly.js",
+  "private": true,
+  "dependencies": {
+    "@jscad/csg": "",
+    "openjscad": "github:Spiritdude/OpenJSCad.org#dev",
+    "jscad":""
+  }
+}
