@@ -7,40 +7,23 @@ var cad = require('jscad');
 
 //var dim = [2, 5, 10, 15, 25, 50, 75, 85, 100, 115, 125, 150];
 //var dim = [2,5,7,10,12,15,17,20,25,30,40];
-var dim = [2,5,7,10,14,17,20,22,20,17,14,10,7,5,2];
+var dim = [2,5,7,10,14,17,14,10,7,5,2];
+//var dim = [40];
 
 
 var calls = [{
-        op: op_union,
-        gen_output: openjscad_generate,
-        create_element: jscad_csg_create_element,
-        name: "jscad_csg_array",
-        extension: "x3d"
-    }/*, {
         op: op_array,
         gen_output: openjscad_generate,
         create_element: jscad_csg_create_element,
         name: "jscad_csg_array",
         extension: "x3d"
-    }, {
-        op: op_array,
-        gen_output: openjscad_generate,
-        create_element: jscad_csg_create_element,
-        name: "jscad_csg_array",
-        extension: "stl"
-    }, {
+    } , {
         op: op_union,
-        gen_output: npm_jscad_generate,
-        create_element: npm_jscad_create_element,
-        name: "npm_jscad_union",
-        extension: "stl"
-    }, {
-        op: op_array,
         gen_output: openjscad_generate,
         create_element: jscad_csg_create_element,
         name: "jscad_csg_union",
         extension: "x3d"
-    }*/
+    }
 ]
 
 for (var index in calls) {
